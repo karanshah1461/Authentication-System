@@ -1,0 +1,47 @@
+<!-- <h1>Sign Up</h1>
+
+<form >
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<input type="password" name="password" placeholder="Password" required>
+<input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+<input type="submit" value="Sign Up!">
+
+</form action="/users/create" method="POST"> -->
+<link rel="stylesheet" href="/css/sign-in.css">
+<div class="container" id="box">
+    <h1><i class="fa fa-user-plus"></i> Sign Up!</h1>
+    <hr style="color:white">
+    <form action="/users/create" method="POST">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+            </div>
+            <input type="text" class="form-control" name="name" placeholder="Your Name" aria-label="Username" aria-describedby="basic-addon1" required>
+        </div>
+    
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">@</span>
+            </div>
+            <input type="email" class="form-control" name="email" placeholder="Your Email" aria-label="Email" aria-describedby="basic-addon1" required>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1"><i class="fa fa-key"></i></span>
+            </div>
+            <input type="password" class="form-control" name="password" placeholder="Enter your password" aria-label="Password" aria-describedby="basic-addon1" required>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1"><i class="fa fa-key"></i></span>
+            </div>
+            <input type="password" class="form-control" name="confirmPassword" placeholder="Confirm password" aria-label="Password" aria-describedby="basic-addon1" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block"><i class="fa fa-plus"></i> Sign Up</button>
+        <p><strong>&nbsp;or&nbsp;</strong></p>
+        <button class="btn btn-lg btn-danger btn-block" onclick="window.location='/users/auth/google'"><i class="fa fa-google"></i> Continue with Google</button>
+        
+      </form>
+    <p>Already have an account? <a href="/users/sign-in">Sign in!</a></p>
+</div>

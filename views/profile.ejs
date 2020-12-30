@@ -1,0 +1,7 @@
+<link rel="stylesheet" href="/css/profile.css">
+<div id="box">
+    <h2>Welcome to your profile <%=locals.user.name%>!</h2>
+    <h3>Mail Id : <%=locals.user.email%></h3>
+    <button onclick="window.location='/users/sign-out'" class="btn btn-lg btn-outline-success"><i class="fa fa-sign-out"></i> Sign Out!</button>
+<button onclick="window.location='/users/update-password'" class="btn btn-lg btn-outline-warning"><i class="fa fa-info-circle"></i> Update Password!</button>
+</div>
